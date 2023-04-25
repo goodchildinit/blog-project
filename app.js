@@ -19,8 +19,11 @@ var posts = [];
 app.get("/", function(req, res) {
 
     // res.render("home", {key:value});
-    res.render("home", {startingContent:homeStartingContent});
-    console.log(posts);
+    res.render("home", {
+        startingContent:homeStartingContent,
+        posts: posts
+    });
+    // console.log(posts);
 });
 
 
